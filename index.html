@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:550px)"
+      href="mobile.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navi">
+        <div class="logodiv">
+          <img src="/images/logo.png" alt="" />
+          <h3>mycountry.in</h3>
+        </div>
+
+          <ul class="navul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="searchdiv">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            <input id="searchInput" autocomplete="off" type="text" />
+            <ul class="searchul"></ul>
+          </div>
+        
+      </nav>
+    </header>
+
+    <!-- main content -->
+
+    <div class="countrycontainer">
+      <div class="itemCountry">
+        <img class="loadingimg" src="/images/loading.png" alt="" />
+      </div>
+    </div>
+
+    <!-- about section -->
+
+    <div id="about" class="container">
+      <header class="header">
+        <h1>Welcome to the Country Information Database</h1>
+      </header>
+
+      <section class="about-section">
+        <h2>About Us</h2>
+        <p>
+          Welcome to our comprehensive
+          <strong>Country Information Database</strong>, your ultimate source
+          for detailed information about countries around the world. Whether
+          you’re a student, traveler, researcher, or simply a curious mind,
+          we’ve created a one-stop platform where you can explore a wide range
+          of facts and statistics about countries, including their capitals,
+          population, geographical data, car driving sides, and much more.
+        </p>
+
+        <p>
+          Our goal is to provide accurate, up-to-date, and easily accessible
+          information to help you understand the world better. We are passionate
+          about showcasing the diversity and uniqueness of each country, from
+          the bustling capitals to the remote regions.
+        </p>
+
+        <h3>What We Offer:</h3>
+        <ul class="offer-list">
+          <li>
+            <strong>Capitals</strong>: Find the official capital cities of every
+            country.
+          </li>
+          <li>
+            <strong>Population</strong>: Get the latest population figures for
+            each nation.
+          </li>
+          <li>
+            <strong>Car Driving Side</strong>: Discover which side of the road
+            vehicles drive on in each country.
+          </li>
+          <li>
+            <strong>Geographical Facts</strong>: Explore location details, area
+            sizes, and natural landmarks.
+          </li>
+          <li>
+            <strong>Cultural Insights</strong>: Learn about traditions,
+            languages, and other interesting cultural aspects.
+          </li>
+          <li>
+            <strong>Economic Data</strong>: View the economic profiles and major
+            industries of each country.
+          </li>
+        </ul>
+
+        <p>
+          Our information is carefully curated and continuously updated to
+          reflect the most current statistics and facts. With easy-to-navigate
+          sections, you can quickly get the data you need, whether you're
+          comparing countries or diving deep into specific details.
+        </p>
+
+        <p>
+          Thank you for visiting, and we hope this platform helps you expand
+          your knowledge of the diverse nations that make up our world!
+        </p>
+      </section>
+    </div>
+
+    <!--    
+ contact us page starts here -->
+
+    <div id="contact" class="concontainer">
+      <header class="header">
+        <h1>Contact Us</h1>
+      </header>
+
+      <section class="contact-section">
+        <h2>We'd Love to Hear From You!</h2>
+        <p>
+          If you have any questions, feedback, or suggestions, feel free to
+          reach out. Our team is always ready to assist you and improve your
+          experience with our Country Information Database.
+        </p>
+
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
+    </div>
+    <!--  contact us page ends here -->
+
+    <footer class="footer">
+      <p>&copy; 2025 Country Information Database. All rights reserved.</p>
+    </footer>
+
+    <script src="logic.js"></script>
+  </body>
+</html>
